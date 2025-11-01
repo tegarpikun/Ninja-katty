@@ -1,0 +1,14 @@
+pages:
+  stage: deploy
+  script:
+    # Pindahkan semua file game (termasuk folder images, index.html, dll.) 
+    # ke dalam folder 'public' yang diperlukan GitLab Pages
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  # Tentukan branch mana yang akan digunakan untuk deploy. Pastikan ini adalah branch utama Anda (main/master).
+  only:
+    - main
