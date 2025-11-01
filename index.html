@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Fruit Ninja - Semangat Katty!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="game-ui">
+            <div id="score-display">Skor: <span>0</span></div>
+            <div id="lives-display">Nyawa: 
+                <span class="life active">❤️</span>
+                <span class="life active">❤️</span>
+                <span class="life active">❤️</span>
+            </div>
+        </div>
+
+        <div id="start-screen" class="game-screen active">
+            <h1>Potong Buah Ninja!</h1>
+            <p>Geser atau klik untuk memotong buah. Hindari bom!</p>
+            <button id="startButton">Mulai Game</button>
+            <p class="tagline">Semangat katty!</p>
+        </div>
+
+        <div id="game-over-screen" class="game-screen">
+            <h2>Game Over!</h2>
+            <p>Skor Anda: <span id="final-score">0</span></p>
+            <button id="restartButton">Main Lagi</button>
+            <p class="tagline">Jangan Menyerah, Semangat katty!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
